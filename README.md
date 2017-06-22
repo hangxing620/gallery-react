@@ -14,3 +14,17 @@
 
 ```
 
+#### bug部分
+
+由于生成的index.html里面的
+```javascript
+
+-- 原来生成的js
+<script type="text/javascript" src="/assets/app.js"></script>
+
+-- 修改后的js
+<script type="text/javascript" src="./assets/app.js"></script>
+```
+
+
+
