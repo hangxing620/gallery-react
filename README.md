@@ -26,5 +26,26 @@
 <script type="text/javascript" src="./assets/app.js"></script>
 ```
 
+打包后的image图片地址有问题，需修改publicPath的路径。
+```javascript
+
+# old cfg/default.js 
+module.exports = {
+  srcPath: srcPath,
+  publicPath: '/assets/',
+  port: dfltPort,
+  getDefaultModules: getDefaultModules
+};
+
+# new cfg/default.js
+module.exports = {
+  srcPath: srcPath,
+  publicPath: './assets/',
+  port: dfltPort,
+  getDefaultModules: getDefaultModules
+};
+
+```
+
 
 
